@@ -1,14 +1,11 @@
+/* body */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
-.footer {
-  background-color: #2e2f42;
-}
-.footer-text {
-  color: #f4f4fd;
-}
+
+/* -------------------------header-------------------------------- */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -18,7 +15,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.logo-header-span {
+.logo-span {
   color: #2e2f42;
 }
 
@@ -44,7 +41,113 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.page-address .link:hover,
+.page-address .link:hover {
+  color: #404bbf;
+}
+
 .page-address .link:active {
   color: #404bbf;
+}
+
+/* -------------------------main-------------------------------- */
+/* -------------------------section 1 ----------*/
+.effective-solutions {
+  background-color: #2e2f42;
+}
+.effective-solutions .page-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.effective-solutions .button-order {
+  background-color: #4d5ae5;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.effective-solutions .button-order:hover {
+  background-color: #404bbf;
+}
+.effective-solutions .button-order:focus {
+  background-color: #404bbf;
+}
+/* -------------------------section 2 ----------*/
+.features .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.features .text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* -------------------------section 3 ----------*/
+.our-team {
+  background-color: #f4f4fd;
+}
+.our-team .our-team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.our-team .team-card {
+  background-color: #ffffff;
+}
+.our-team .team-card .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: #2e2f42;
+}
+.our-team .team-card .profession {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  color: #434455;
+}
+
+/* -------------------------section 4 ----------*/
+.portfolio .portfolio-title {
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.2em;
+  color: #2e2f42;
+  text-align: center;
+  text-transform: capitalize;
+}
+.portfolio .project-card .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: #2e2f42;
+}
+.portfolio .project-card .project-type {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  color: #434455;
+}
+/* -------------------------footer-------------------------------- */
+.footer {
+  background-color: #2e2f42;
+}
+.footer .logo-span {
+  color: #f4f4fd;
+}
+.footer .footer-text {
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
