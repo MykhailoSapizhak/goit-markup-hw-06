@@ -59,6 +59,7 @@ img {
 
 .header .container {
   display: flex;
+  align-items: center;
 }
 .header .logo {
   margin-right: 76px;
@@ -78,6 +79,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .header-nav-list {
@@ -101,6 +103,7 @@ img {
 
 .header-list-item .link {
   padding: 24px 0;
+  display: block;
 }
 
 .header-address {
@@ -132,6 +135,12 @@ img {
 }
 .effective-solutions-title {
   max-width: 496px;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
 }
 .effective-solutions {
   background-color: #2e2f42;
@@ -157,6 +166,9 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
 }
 .effective-solutions .button-order:hover {
   background-color: #404bbf;
