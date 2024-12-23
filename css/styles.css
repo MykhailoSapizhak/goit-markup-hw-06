@@ -132,6 +132,9 @@ img {
 /* -------------------------section 1 ----------*/
 .effective-solutions {
   padding: 188px 0;
+  background-image: url(../images/people-office\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .effective-solutions-title {
   max-width: 496px;
