@@ -107,6 +107,7 @@ img {
   display: block;
   position: relative;
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list-item .link::after {
   content: "";
@@ -147,9 +148,12 @@ img {
 /* -------------------------section 1 ----------*/
 .effective-solutions {
   padding: 188px 0;
+  background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1440px;
+  background-position: center;
 }
 .effective-solutions-title {
   max-width: 496px;
@@ -160,9 +164,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.effective-solutions {
-  background-color: #2e2f42;
-}
+
 .effective-solutions .page-title {
   font-size: 56px;
   line-height: 1.07;
@@ -187,6 +189,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .effective-solutions .button-order:hover {
   background-color: #404bbf;
@@ -214,6 +217,16 @@ img {
 .features-item {
   width: calc((100% - 72px) / 4);
 }
+.features-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
 .features-item .title {
   margin-bottom: 8px;
 }
@@ -235,6 +248,7 @@ img {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-card-title {
   font-weight: 500;
