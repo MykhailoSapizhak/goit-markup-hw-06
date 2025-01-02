@@ -106,10 +106,10 @@ img {
   padding: 24px 0;
   display: block;
   position: relative;
-  color: #404bbf;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-list-item .link::after {
+.header-list-item:first-child .link::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -119,6 +119,9 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-list-item.first .link {
+  color: #404bbf;
 }
 
 .header-address {
@@ -154,6 +157,7 @@ img {
   background-size: cover;
   max-width: 1440px;
   background-position: center;
+  margin: 0 auto;
 }
 .effective-solutions-title {
   max-width: 496px;
@@ -279,7 +283,7 @@ img {
 .team-card-profession {
   font-size: 16px;
   color: #6c6c80;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 
 .team-card-icon-list {
@@ -289,7 +293,6 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 16px;
 }
 
 .team-card-icon-list-item {
@@ -442,4 +445,54 @@ img {
 }
 .footer-network-item .link .icons {
   fill: #f4f4fd;
+}
+
+.footer-form .text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.footer-form .form {
+  display: flex;
+  gap: 24px;
+}
+.footer-form .enter-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.footer-form .enter-email::placeholder {
+  color: #ffffff;
+}
+.btn-subscribe {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+.btn-subscribe .icon {
+  margin-left: 16px;
 }
