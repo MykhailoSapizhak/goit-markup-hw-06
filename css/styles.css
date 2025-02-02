@@ -562,7 +562,7 @@ img {
 .modal-contact-form .contact-form {
   margin-bottom: 8px;
 }
-.user-name-label {
+.modal-contact-form .label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -570,10 +570,10 @@ img {
   display: block;
   margin-bottom: 4px;
 }
-.user-name-input-container {
+.modal-contact-form .input-container {
   position: relative;
 }
-.user-name-input {
+.modal-contact-form .contact-form .input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -583,16 +583,102 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.user-name-input:focus {
+.modal-contact-form .contact-form .input :focus {
   border-color: #4d5ae5;
 }
-.user-name-input-container .icons {
+.modal-contact-form .contact-form .input-container .icons {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.user-name-input:focus .icons.person-black {
+.modal-contact-form .input:focus + .icons {
   fill: #4d5ae5;
+}
+
+/*-------------------- Text-area ---------------------- */
+.comment-container {
+  margin-bottom: 16px;
+}
+.modal-contact-form .comment-container .text-area {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-contact-form .comment-container .text-area:focus {
+  border-color: #4d5ae5;
+}
+
+/*-------------------- Checkbox ---------------------- */
+.modal-contact-form .checkbox-container {
+  margin-bottom: 24px;
+}
+.modal-contact-form .checkbox-container .label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-contact-form .checkbox-container .label .span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+/*!!!!!!!!!!!!!!! потрібно доробити від svg!!!!!!!!!!!!!!!!!!!!! */
+.input:checked + .checkbox-custom {
+  background-color: var(--primary-bg);
+  border: none;
+}
+.checkbox-container.input:checked + .checkbox-container .span-privacy-policy {
+  background-color: #404bbf;
+  border: none;
+}
+.checkbox-container .input:checked + .checkbox-container .icons {
+  fill: #f4f4fd;
+}
+
+.link-privacy-policy {
+  color: #4d5ae5;
+}
+
+/*-------------------- Button ---------------------- */
+.button-send {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-privacy-policy {
+  text-decoration: underline;
 }
