@@ -547,8 +547,9 @@ img {
   border: none;
   fill: #ffffff;
 }
-.btn-cancel-svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal .btn-cancel-svg {
+  fill: #2e2f42;
+  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal .text-hint {
   font-weight: 500;
@@ -624,14 +625,14 @@ img {
 .modal-contact-form .checkbox-container {
   margin-bottom: 24px;
 }
-.modal-contact-form .checkbox-container .label {
+.label-checkbox {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.modal-contact-form .checkbox-container .label .span {
+.checkbox-custom {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -643,21 +644,15 @@ img {
   fill: transparent;
 }
 
-/*!!!!!!!!!!!!!!! потрібно доробити від svg!!!!!!!!!!!!!!!!!!!!! */
-.input:checked + .checkbox-custom {
-  background-color: var(--primary-bg);
-  border: none;
-}
-.checkbox-container.input:checked + .checkbox-container .span-privacy-policy {
+.input-checkbox:checked + .label-checkbox > .checkbox-custom {
   background-color: #404bbf;
   border: none;
-}
-.checkbox-container .input:checked + .checkbox-container .icons {
   fill: #f4f4fd;
 }
 
 .link-privacy-policy {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 /*-------------------- Button ---------------------- */
@@ -678,7 +673,4 @@ img {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-privacy-policy {
-  text-decoration: underline;
 }
