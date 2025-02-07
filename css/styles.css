@@ -563,7 +563,7 @@ img {
   border: none;
 }
 
-.modal .text-hint {
+.modal-overlay .modal .text-hint {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
