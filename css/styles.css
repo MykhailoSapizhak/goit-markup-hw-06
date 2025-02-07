@@ -551,16 +551,18 @@ img {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .btn-cancel-svg:hover,
-.modal .btn-cancel-svg:focus {
-  fill: #ffffff;
-}
-
-.modal-btn-cancel:hover .btn-cancel-svg,
-.modal-btn-cancel:focus {
-  fill: #ffffff;
-  background-color: #404bbf;
-  border: none;
+  .modal .btn-cancel-svg:hover,
+  .modal .btn-cancel-svg:focus {
+    fill: #ffffff;
+  }
+ 
+  .modal-btn-cancel:hover .btn-cancel-svg,
+  .modal-btn-cancel:focus .btn-cancel-svg {
+    fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
+    
+  }
 }
 
 .modal .text-hint {
