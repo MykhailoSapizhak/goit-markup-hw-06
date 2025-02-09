@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-old.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,20 +36,33 @@
             <li class="adress-item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc link</div>
+        </div>
       </div>
     </header>
 
     <main>
       <!------------------------- section 1 -------------------->
-      <section class="effective-solutions section">
+      <section class="effective-solutions section hidden">
         <div class="container">
           <h1 class="effective-solutions-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-order">Order Service</button>
+          <button type="button" class="button-order" data-modal-open>Order Service</button>
         </div>
       </section>
 
       <!------------------------- section 2 -------------------->
-      <section class="features section">
+      <section class="features section hidden">
         <div class="container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list">
@@ -94,7 +107,7 @@
       </section>
 
       <!------------------------- section 3 -------------------->
-      <section class="our-team section">
+      <section class="our-team section hidden">
         <div class="container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
@@ -255,7 +268,7 @@
       </section>
 
       <!------------------------- section 4 -------------------->
-      <section class="portfolio section">
+      <section class="portfolio section hidden">
         <div class="container">
           <h2 class="portfolio-title">Our portfolio</h2>
           <ul class="project-list">
@@ -342,7 +355,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="footer-container container">
         <div class="text-container">
           <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span></a>
@@ -399,9 +412,9 @@
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="modal-btn-cancel" type="button">
+        <button class="modal-btn-cancel" type="button" data-modal-close>
           <svg class="btn-cancel-svg" width="8" height="8">
             <use href="./images/icons.svg#close-black-18dp"></use>
           </svg>
@@ -463,5 +476,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
