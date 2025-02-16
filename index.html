@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles-old.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,17 +44,53 @@
       </div>
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <button class="mobile-menu-close" data-menu-close>C</button>
           <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Soc link</div>
+          <address class="header-address">
+            <ul class="adress-list">
+              <li class="adress-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+              <li class="adress-item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+            </ul>
+          </address>
+          <div>
+            <ul class="team-card-icon-list">
+              <li class="team-card-icon-list-item">
+                <a href="" class="link">
+                  <svg class="icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-card-icon-list-item">
+                <a href="" class="link">
+                  <svg class="icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-card-icon-list-item">
+                <a href="" class="link">
+                  <svg class="icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-card-icon-list-item">
+                <a href="" class="link">
+                  <svg class="icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <!------------------------- section 1 -------------------->
-      <section class="effective-solutions section hidden">
+      <section class="effective-solutions section">
         <div class="container">
           <h1 class="effective-solutions-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button-order" data-modal-open>Order Service</button>
@@ -62,7 +98,7 @@
       </section>
 
       <!------------------------- section 2 -------------------->
-      <section class="features section hidden">
+      <section class="features section">
         <div class="container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list">
@@ -91,7 +127,7 @@
                 </svg>
               </div>
               <h3 class="title">Diligence</h3>
-              <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+              <p class="text">Research and confirm brands with the strongest digital growth opportunities and minimize risk.</p>
             </li>
             <li class="features-item">
               <div class="features-icons-container">
@@ -107,7 +143,7 @@
       </section>
 
       <!------------------------- section 3 -------------------->
-      <section class="our-team section hidden">
+      <section class="our-team section">
         <div class="container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
@@ -268,7 +304,7 @@
       </section>
 
       <!------------------------- section 4 -------------------->
-      <section class="portfolio section hidden">
+      <section class="portfolio section">
         <div class="container">
           <h2 class="portfolio-title">Our portfolio</h2>
           <ul class="project-list">
@@ -412,7 +448,8 @@
       </div>
     </footer>
 
-    <div class="modal-overlay" data-modal>
+    <!------------------------   MODAL--------------- -->
+    <div class="modal-overlay hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-cancel" type="button" data-modal-close>
           <svg class="btn-cancel-svg" width="8" height="8">
