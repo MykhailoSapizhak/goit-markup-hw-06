@@ -435,13 +435,19 @@ button {
 .effective-solutions {
   padding: 72px 0;
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ 1-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   background-position: center;
   margin: 0 auto;
 }
+@media screen and (min-resolution: 2x) {
+  .effective-solutions {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ 1@2x-min.jpg);
+  }
+}
+
 .effective-solutions-title {
   max-width: 216px;
   font-size: 36px;
